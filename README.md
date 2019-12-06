@@ -1,5 +1,5 @@
 # Extended Kalman Filter Project Starter Code
-Self-Driving Car Engineer Nanodegree Program
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 ## Overview
 In this project you will utilize a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower than the tolerance outlined in the project rubric. 
@@ -25,6 +25,7 @@ This program follows the flow of this chart:
 Prediction:
 * x′ =Fx+u (11)
 * P′=FPFT+Q
+
 Measurement Update:
 * x′ =Fx+u (11) P′=FPFT+Q
 * y = z − Hx′ (13) S=HP′HT+R (14) K = P′HT S−1
@@ -33,13 +34,16 @@ The measurement function can be found in kalman_filter.cpp and the CalculateJaco
 
 ## State Update with Kalman Filter equation or Extended Kalman Filter equation:
 ### Radar:
-1.Linearize measurement function by calculating jacobian matrix Hj:
+1. Linearize measurement function by calculating jacobian matrix Hj:
+
 <img src="./Docs/jacobian matrix Hj.png">
-2.Run measurement update with Extended Kalman Filter equations:
-3.Image referenced is of Kalman Filter equations. Extended Kalman Filter equation is modified to be y = z - h(x), and uses Hj in place of any other H. h(x) is defined as:
+2. Run measurement update with Extended Kalman Filter equations:
+3. Image referenced is of Kalman Filter equations. Extended Kalman Filter equation is modified to be y = z - h(x), and uses Hj in place of any other H. h(x) is defined as:
+
 <img src="./Docs/jacobian matrix Hx.png">
+
 ### Lidar:
-1.Update function run from standard Kalman Filter equations
+1. Update function run from standard Kalman Filter equations
 
 ## Extended Kalman Filter
 
