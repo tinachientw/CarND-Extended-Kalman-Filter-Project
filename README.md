@@ -38,6 +38,7 @@ The measurement function can be found in kalman_filter.cpp and the CalculateJaco
 
 <img src="./Docs/jacobian matrix Hj.png">
 2. Run measurement update with Extended Kalman Filter equations:
+
 3. Image referenced is of Kalman Filter equations. Extended Kalman Filter equation is modified to be y = z - h(x), and uses Hj in place of any other H. h(x) is defined as:
 
 <img src="./Docs/jacobian matrix Hx.png">
